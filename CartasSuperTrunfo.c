@@ -31,6 +31,8 @@ int main(){
   printf("Número de Pontos Turísticos: \n");
   scanf("%d", &turismo);
 
+  printf("\n");
+
   printf("Carta1\n");
   printf("Estado: %s\n", estado);
   printf("Código: %s\n", codigo);
@@ -39,6 +41,7 @@ int main(){
   printf("Área: %.2fkm²\n", area);
   printf("PIB: %.2f bilhões de reais\n", pib);
   printf("Número de Pontos Turísticos: %d\n", turismo);
+  printf("\n");
 
   //Código fonte Carta2
   printf("Carta2:\n");
@@ -63,6 +66,8 @@ int main(){
 
   printf("Número de Pontos Turísticos: \n");
   scanf("%d", &turismo);
+
+  printf("\n");
 
   printf("Carta2\n");
   printf("Estado: %s\n", estado);
