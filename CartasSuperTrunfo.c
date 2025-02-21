@@ -3,7 +3,7 @@
 // Desafio Super Trunfo - Países
 
 int main(){
-  char estado1[3], estado2[3];
+  char estado1[5], estado2[8];
   char codigo1[4], codigo2[6];
   char nome1[20], nome2[20];
   int populacao1, populacao2;
@@ -70,7 +70,7 @@ int main(){
   printf("Estado: %s\n", estado1);
   printf("Código: %s\n", codigo1);
   printf("Nome da Cidade: %s\n", nome1);
-  printf("População: %d mil habitantes\n", populacao1);
+  printf("População: %d\n", populacao1);
   printf("Área: %.2fkm²\n", area1);
   printf("PIB: %.2f bilhões de reais\n", pib1);
   printf("Número de Pontos Turísticos: %d\n", turismo1);
@@ -82,7 +82,7 @@ int main(){
   printf("Estado: %s\n", estado2);
   printf("Código: %s\n", codigo2);
   printf("Nome da Cidade: %s\n", nome2);
-  printf("População: %d mil habitantes\n", populacao2);
+  printf("População: %d\n", populacao2);
   printf("Área: %.2fkm²\n", area2);
   printf("PIB: %.2f bilhões de reais\n", pib2);
   printf("Número de Pontos Turísticos: %d\n", turismo2);
@@ -90,4 +90,5 @@ int main(){
   return 0;
 
 }
+
 
