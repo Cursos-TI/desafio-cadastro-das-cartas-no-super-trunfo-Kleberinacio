@@ -3,19 +3,13 @@
 // Desafio Super Trunfo - Países
 
 int main(){
-  /*
-  Divisão (/)
-  soma (+)
-  */
   char estado1[3], estado2[3];
-  char codigo1[6], codigo2[6];
+  char codigo1[6], codigo2[3];
   char nome1[20], nome2[20];
   unsigned long int populacao1, populacao2;
   int turismo1, turismo2;
   float area1, area2;
   float pib1, pib2;
-  float densidade1, densidade2, percapita1, percapita2;
-  float superpoder1, superpoder2;
 
   //Código fonte Carta1 
   
@@ -30,8 +24,8 @@ int main(){
   scanf("%s", &nome1);
 
   printf("População: \n");
-  scanf("%lu", &populacao1);
-  
+  scanf("%d", &populacao1);
+
   printf("Área: \n");
   scanf("%f", &area1);
 
@@ -40,15 +34,6 @@ int main(){
 
   printf("Número de Pontos Turísticos: \n");
   scanf("%d", &turismo1);
-
-  //Formula Densidade Populacional e PIB per Capita Carta 1
-
-  densidade1 = populacao1 / area1;
-  percapita1 = pib1 / populacao1;
-
-  //Formula soma dos atributos numéricos Carta 1
-
-  superpoder1 = (float) populacao1 + area1 + pib1 + turismo1 + 1 / densidade1 + percapita1;
 
   printf("\n");
 
@@ -66,8 +51,8 @@ int main(){
   scanf("%s", &nome2);
 
   printf("População: \n");
-  scanf("%lu", &populacao2);
-  
+  scanf("%d", &populacao2);
+
   printf("Área: \n");
   scanf("%f", &area2);
 
@@ -76,15 +61,6 @@ int main(){
 
   printf("Número de Pontos Turísticos: \n");
   scanf("%d", &turismo2);
-
-  //Formula Densidade Populacional e PIB per Capita Carta 2
-
-  densidade2 = populacao2 / area2;
-  percapita2 = pib2 / populacao2;
-
-  //Formula soma dos atributos numéricos Carta 2
-
-  superpoder2 = (float) populacao2 + area2 + pib2 + turismo2 + 1 / densidade2 + percapita2;
 
   printf("\n");
 
@@ -98,9 +74,6 @@ int main(){
   printf("Área: %.2fkm²\n", area1);
   printf("PIB: %.2f bilhões de reais\n", pib1);
   printf("Número de Pontos Turísticos: %d\n", turismo1);
-  printf("Densidade Populacional: %.2f\n", densidade1);
-  printf("PIB per Capita: %.2f\n", percapita1);
-  printf("Super Poder: %.2f\n", superpoder1);
   printf("\n");
 
   //Print Carta 2
@@ -113,24 +86,9 @@ int main(){
   printf("Área: %.2fkm²\n", area2);
   printf("PIB: %.2f bilhões de reais\n", pib2);
   printf("Número de Pontos Turísticos: %d\n", turismo2);
-  printf("Densidade Populacional: %.2f\n", densidade2);
-  printf("PIB per Capita: %.2f\n", percapita2);
-  printf("Super Poder: %.2f\n", superpoder2);
-  printf("\n");
-
-  //Comparação das Cartas Super Trunfo
-
-  printf("Resultado = 1, Carta 1 vence!\n");
-  printf("Resultado = 0, Carta 2 vence!\n");
-  printf("\n");
-  printf("População: %d\n", populacao1 > populacao2);
-  printf("Área: %d\n", area1 > area2);
-  printf("PIB: %d\n", pib1 > pib2);
-  printf("Número de Pontos Turísticos: %d\n", turismo1 > turismo2);
-  printf("Densidade Populacional: %d\n", densidade1 < densidade2);
-  printf("PIB per Capita: %d\n", percapita1 > percapita2);
-  printf("Super Poder: %d\n", superpoder1 > superpoder2);
 
   return 0;
 
 }
+
+
