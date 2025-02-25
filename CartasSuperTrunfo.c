@@ -118,7 +118,7 @@ int main(){
   printf("Super Poder: %.2f\n", superpoder2);
   printf("\n");
 
-  //Comparação das Cartas
+  //Comparação das Cartas Super Trunfo
 
   printf("Resultado = 1, Carta 1 vence!\n");
   printf("Resultado = 0, Carta 2 vence!\n");
